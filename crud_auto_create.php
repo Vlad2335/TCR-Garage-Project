@@ -9,7 +9,7 @@ try {
     $merk = filter_input(INPUT_POST, "Merk", FILTER_SANITIZE_STRING);
     $model = filter_input(INPUT_POST, "Model", FILTER_SANITIZE_STRING);
     $bouwjaar = filter_input(INPUT_POST, "Bouwjaar", FILTER_SANITIZE_STRING);
-    $brandstof = filter_input(INPUT_POST, "Brandstof", FILTER_SANITIZE_NUMBER_INT);
+    $brandstof = filter_input(INPUT_POST, "Brandstof", FILTER_SANITIZE_STRING);
 
 //    $query = $db->prepare("INSERT INTO `klanten`(`ID`, `voornaam`, `achternaam`, `adres`, `telefoon`, `email`, `autoid`) VALUES (':id', ':voornaam', ':achternaam', ':adres', ':telefoon', ':email' ,':autoid')");
     $query = $db->prepare("INSERT INTO crud_auto(`AutoID`, `KlantID`, `Kenteken`, `Merk`, `Model`, `Bouwjaar`, `Brandstof`) VALUES (:autoid, :klantid, :kenteken, :merk, :model, :bouwjaar, :brandstof)");

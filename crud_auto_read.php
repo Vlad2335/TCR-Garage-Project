@@ -1,4 +1,4 @@
-<<style type="text/css">
+<style type="text/css">
   table {
     border-collapse: collapse;
     border: 1px solid black;
@@ -33,17 +33,17 @@ try {
         echo "<td>Merk</td>";
         echo "<td>Model</td>";
         echo "<td>Bouwjaar</td>";
-        echo "<td>AutoID</td>";
+        echo "<td>Brandstof</td>";
       echo "</tr>";
     foreach($result as &$data) {
       echo "<tr>";
-        echo "<td>" . $data["autoID"] . "</td>";
-        echo "<td>" . $data["klantID"] . "</td>";
-        echo "<td>" . $data["kenteken"] . "</td>";
-        echo "<td>" . $data["merk"] . "</td>";
-        echo "<td>" . $data["model"] . "</td>";
-        echo "<td>" . $data["bouwjaar"] . "</td>";
-        echo "<td>" . $data["autoid"] . "</td>";
+        echo "<td>" . $data["AutoID"] . "</td>";
+        echo "<td>" . $data["KlantID"] . "</td>";
+        echo "<td>" . $data["Kenteken"] . "</td>";
+        echo "<td>" . $data["Merk"] . "</td>";
+        echo "<td>" . $data["Model"] . "</td>";
+        echo "<td>" . $data["Bouwjaar"] . "</td>";
+        echo "<td>" . $data["Brandstof"] . "</td>";
       echo "</tr>";
     }
   echo "</table>";
